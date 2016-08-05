@@ -1,0 +1,3 @@
+﻿# meteoroloji-egitim-mean
+
+

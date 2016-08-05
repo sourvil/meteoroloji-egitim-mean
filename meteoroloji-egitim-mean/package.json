@@ -1,0 +1,9 @@
+{
+  "name": "meteoroloji-egitim-mean",
+  "version": "0.0.0",
+  "description": "meteoroloji-egitim-mean",
+  "main": "server.js",
+  "author": {
+    "name": "Burak"
+  }
+}
