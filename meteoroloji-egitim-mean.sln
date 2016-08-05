@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "1-HelloWorld", "1-HelloWorld\1-HelloWorld.njsproj", "{B9A152F4-00C5-47C7-A845-93932A6822EB}"
 EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "2-io", "2-io\2-io.njsproj", "{DC8D343D-2CDF-4F15-8455-588682DB926E}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "3-callback-promise", "3-callback-promise\3-callback-promise.njsproj", "{A494F484-1332-435C-A455-223A9F77996D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{B9A152F4-00C5-47C7-A845-93932A6822EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9A152F4-00C5-47C7-A845-93932A6822EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9A152F4-00C5-47C7-A845-93932A6822EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC8D343D-2CDF-4F15-8455-588682DB926E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC8D343D-2CDF-4F15-8455-588682DB926E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC8D343D-2CDF-4F15-8455-588682DB926E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC8D343D-2CDF-4F15-8455-588682DB926E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A494F484-1332-435C-A455-223A9F77996D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A494F484-1332-435C-A455-223A9F77996D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A494F484-1332-435C-A455-223A9F77996D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A494F484-1332-435C-A455-223A9F77996D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

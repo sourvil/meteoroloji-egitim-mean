@@ -1,0 +1,9 @@
+{
+  "name": "3-callback-promise",
+  "version": "0.0.0",
+  "description": "3-callback-promise",
+  "main": "server.js",
+  "author": {
+    "name": "Burak"
+  }
+}

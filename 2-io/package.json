@@ -1,0 +1,9 @@
+{
+  "name": "2-io",
+  "version": "0.0.0",
+  "description": "2-io",
+  "main": "server.js",
+  "author": {
+    "name": "Burak"
+  }
+}
