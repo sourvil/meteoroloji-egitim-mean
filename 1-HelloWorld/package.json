@@ -1,7 +1,7 @@
 {
-  "name": "meteoroloji-egitim-mean",
+  "name": "1-hello-world",
   "version": "0.0.0",
-  "description": "meteoroloji-egitim-mean",
+  "description": "1-HelloWorld",
   "main": "server.js",
   "author": {
     "name": "Burak"
