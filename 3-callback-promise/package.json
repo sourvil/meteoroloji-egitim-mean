@@ -5,5 +5,8 @@
   "main": "server.js",
   "author": {
     "name": "Burak"
+  },
+  "dependencies": {
+    "q": "^1.4.1"
   }
 }
