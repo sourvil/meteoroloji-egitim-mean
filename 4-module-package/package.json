@@ -1,0 +1,13 @@
+{
+  "name": "4-module-package",
+  "version": "0.0.0",
+  "description": "4-module-package",
+  "main": "server.js",
+  "author": {
+    "name": "Burak"
+  },
+  "dependencies": {
+    "request": "^2.74.0",
+    "sync-request": "^3.0.1"
+  }
+}
