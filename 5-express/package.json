@@ -1,9 +1,0 @@
-{
-  "name": "5-express",
-  "version": "0.0.0",
-  "description": "5-express",
-  "main": "server.js",
-  "author": {
-    "name": "Burak"
-  }
-}

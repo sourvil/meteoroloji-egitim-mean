@@ -11,7 +11,7 @@ Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "3-callback-promise", "3-cal
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "4-module-package", "4-module-package\4-module-package.njsproj", "{3AFE687C-C763-4FCD-9816-087DCA91B25A}"
 EndProject
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "5-express", "5-express\5-express.njsproj", "{B4DE7C74-1CDD-486F-92CD-7F86264DD389}"
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "5-express-generator", "5-express-generator\5-express-generator.njsproj", "{66EE258D-3010-48E8-8927-BE2BCECC0599}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{3AFE687C-C763-4FCD-9816-087DCA91B25A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AFE687C-C763-4FCD-9816-087DCA91B25A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AFE687C-C763-4FCD-9816-087DCA91B25A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B4DE7C74-1CDD-486F-92CD-7F86264DD389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B4DE7C74-1CDD-486F-92CD-7F86264DD389}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B4DE7C74-1CDD-486F-92CD-7F86264DD389}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B4DE7C74-1CDD-486F-92CD-7F86264DD389}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66EE258D-3010-48E8-8927-BE2BCECC0599}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66EE258D-3010-48E8-8927-BE2BCECC0599}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66EE258D-3010-48E8-8927-BE2BCECC0599}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66EE258D-3010-48E8-8927-BE2BCECC0599}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
