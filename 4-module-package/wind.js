@@ -1,11 +1,12 @@
 ﻿var request = require('sync-request');
+const env = require('env2')('./config.env');
 
 var ruzgarGetir = function (city) {
     var url = "";
     if(city == 'ISTANBUL')
-        url = "http://api.wunderground.com/api/b43ba424bd9be3a3/conditions/q/Istanbul.json";
+        url = process.env.istanbulWurl;
     else
-        url = "http://api.wunderground.com/api/b43ba424bd9be3a3/conditions/q/Ankara.json";
+        url = process.env.ankaraWurl;
 
     var res = request('GET', url);
     var data = JSON.parse(res.getBody('utf-8'));

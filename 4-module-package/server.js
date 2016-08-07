@@ -3,5 +3,7 @@ weather.ankaraSicaklikGoster();
 weather.istanbulSicaklikGoster();
 
 var wind = require('./wind');
-var ruzgar = wind.ruzgarGetir('ISTANBUL');
-console.log('Ruzgar:' + ruzgar);
+var city = 'ISTANBUL';
+var ruzgar = wind.ruzgarGetir(city);
+console.log(city + ' Ruzgar:' + ruzgar);
+

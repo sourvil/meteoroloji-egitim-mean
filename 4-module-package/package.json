@@ -7,6 +7,7 @@
     "name": "Burak"
   },
   "dependencies": {
+    "env2": "^2.1.1",
     "request": "^2.74.0",
     "sync-request": "^3.0.1"
   }

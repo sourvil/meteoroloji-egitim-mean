@@ -1,23 +1,24 @@
 ﻿var request = require('request');
+const env = require('env2')('./config.env');
 
 function ankaraSicaklikGoster() {
-    var url = "http://api.wunderground.com/api/b43ba424bd9be3a3/conditions/q/Ankara.json";
+    var url = process.env.ankaraWurl;
     request(url, function (error, response, body) {
         if (!error && response.statusCode == 200) {
             data = JSON.parse(body);
             ankaraSicaklik = data.current_observation.temp_c;
-            console.log('Ankara Sıcaklık: ' + ankaraSicaklik);
+            console.log('ANKARA Sıcaklık: ' + ankaraSicaklik);
         }
     });
 };
 
 function istanbulSicaklikGoster() {
-    var url = "http://api.wunderground.com/api/b43ba424bd9be3a3/conditions/q/Istanbul.json";
+    var url = process.env.istanbulWurl;
     request(url, function (error, response, body) {
         if (!error && response.statusCode == 200) {
             data = JSON.parse(body);
             istanbulSicaklik = data.current_observation.temp_c;
-            console.log('Istanbul Sıcaklık: ' + istanbulSicaklik);
+            console.log('ISTANBUL Sıcaklık: ' + istanbulSicaklik);
         }
     });
 };
