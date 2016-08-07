@@ -5,8 +5,25 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+// Mongoose Schema
+require('./models/models');
+
 var routes = require('./routes/index');
 var users = require('./routes/users');
+var city = require('./routes/city');
+var weather = require('./routes/weather');
+
+var mongoose = require('mongoose');
+const env = require('env2')('./config.env');
+
+var mongoURI = process.env.mongoURI;
+
+var MongoDB = mongoose.connect(mongoURI).connection;
+MongoDB.on('error', function (err) { console.log(err.message); });
+MongoDB.once('open', function () {
+    console.log("mongodb connection open");
+});
+
 
 var app = express();
 
@@ -24,6 +41,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+app.use('/city', city);
+app.use('/weather', weather);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
