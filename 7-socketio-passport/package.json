@@ -1,0 +1,9 @@
+{
+  "name": "7-socketio-passport",
+  "version": "0.0.0",
+  "description": "7-socketio-passport",
+  "main": "server.js",
+  "author": {
+    "name": "Burak"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "6-mongodb-mongoose-mlab",
+  "version": "0.0.0",
+  "description": "6-mongodb-mongoose-mlab",
+  "main": "server.js",
+  "author": {
+    "name": "Burak"
+  },
+  "dependencies": {
+    "mongodb": "^2.2.5",
+    "mongoose": "^4.5.8"
+  }
+}

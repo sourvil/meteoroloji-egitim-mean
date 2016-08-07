@@ -13,6 +13,12 @@ Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "4-module-package", "4-modul
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "5-express-generator", "5-express-generator\5-express-generator.njsproj", "{66EE258D-3010-48E8-8927-BE2BCECC0599}"
 EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "6-mongodb-mongoose-mlab", "6-mongodb-mongoose-mlab\6-mongodb-mongoose-mlab.njsproj", "{192CB57D-A69F-4B59-878D-CB3CCD3F3C4F}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "7-socketio-passport", "7-socketio-passport\7-socketio-passport.njsproj", "{ED55F870-BF09-4AA7-B702-A918CED9FDB8}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "8-ci-test-cd", "8-ci-test-cd\8-ci-test-cd.njsproj", "{11947D6F-6254-4F9A-BA3A-A90B7547ABCC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +45,18 @@ Global
 		{66EE258D-3010-48E8-8927-BE2BCECC0599}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66EE258D-3010-48E8-8927-BE2BCECC0599}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66EE258D-3010-48E8-8927-BE2BCECC0599}.Release|Any CPU.Build.0 = Release|Any CPU
+		{192CB57D-A69F-4B59-878D-CB3CCD3F3C4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{192CB57D-A69F-4B59-878D-CB3CCD3F3C4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{192CB57D-A69F-4B59-878D-CB3CCD3F3C4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{192CB57D-A69F-4B59-878D-CB3CCD3F3C4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED55F870-BF09-4AA7-B702-A918CED9FDB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED55F870-BF09-4AA7-B702-A918CED9FDB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED55F870-BF09-4AA7-B702-A918CED9FDB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED55F870-BF09-4AA7-B702-A918CED9FDB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11947D6F-6254-4F9A-BA3A-A90B7547ABCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11947D6F-6254-4F9A-BA3A-A90B7547ABCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11947D6F-6254-4F9A-BA3A-A90B7547ABCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11947D6F-6254-4F9A-BA3A-A90B7547ABCC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
