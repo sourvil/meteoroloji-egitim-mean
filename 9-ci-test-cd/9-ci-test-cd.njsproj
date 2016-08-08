@@ -3,15 +3,16 @@
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
-    <Name>7-socketio-passport</Name>
-    <RootNamespace>7-socketio-passport</RootNamespace>
+    <Name>9-ci-test-cd</Name>
+    <RootNamespace>8-ci-test-cd</RootNamespace>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>ed55f870-bf09-4aa7-b702-a918ced9fdb8</ProjectGuid>
-    <ProjectHome>.</ProjectHome>
+    <ProjectGuid>11947d6f-6254-4f9a-ba3a-a90b7547abcc</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
     <StartupFile>server.js</StartupFile>
     <SearchPath>
     </SearchPath>

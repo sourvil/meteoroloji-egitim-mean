@@ -1,7 +1,7 @@
 {
-  "name": "7-socketio-passport",
+  "name": "8-socketio",
   "version": "0.0.0",
-  "description": "7-socketio-passport",
+  "description": "8-socketio",
   "main": "server.js",
   "author": {
     "name": "Burak"
