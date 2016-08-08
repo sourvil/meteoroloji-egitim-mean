@@ -1,0 +1,33 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>Meteoroloji Mesajlaşma</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css">
+
+</head>
+<body>
+    <div class="form-group panel panel-info">
+        <form action="">
+            <ul id="messages"></ul>
+            <input id="m" autocomplete="off" /><button class="btn btn-primary">Mesaj Gönder</button>
+        </form>
+    </div>
+
+
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.js"></script>
+    <script>
+        var socket = io();
+        $('form').submit(function () {
+            var date = new Date(Date.now());
+            socket.emit('message', $('#m').val() + ' - ' + date.toLocaleString());
+            $('#m').val('');
+            return false;
+        });
+        socket.on('message', function (msg) {
+            $('#messages').append($('<li>').text(msg));
+        });
+    </script>
+</body>
+</html>
