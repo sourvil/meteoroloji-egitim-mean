@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html ng-app="index">
+<head>
+    <title>Meteoroloji Angular Eğitim Demo</title>
+	<meta charset="utf-8" />
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.8/i18n/angular-locale_tr-tr.js"></script>
+    <script src="app/index.js" type="text/javascript"></script>
+    <script src="app/content.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css">
+
+
+</head>
+<body>
+    <div ng-controller="SeasonCtrl as seasonCtrl" class="container">
+        <h1>Şu an mevsim  <b>{{seasonCtrl.season}}</b></h1>
+        <!--<h2>(saat:{{currentTime | date:'medium'}})</h2>-->
+        <br />
+        <input type="text" ng-model="seasonCtrl.season">
+        <!--<br><br>
+        <input type="button" ng-click="setSeason('Yaz')" value="Mevsim Yaz olsun" class="btn btn-primary" />
+        <br /><br />
+        <input type="button" ng-click="setSeason('Kış')" value="Mevsim Kış olsun" class="btn btn-primary" />
+        <br><br>
+        <h3><span ng-bind="::season"  class="label label-danger"></span></h3>-->
+    </div>
+    <br /><br />
+
+    <!--<div ng-controller="WeatherCtrl" class="container">
+        <h1>Şu an hava <b ng-bind="weather"></b></h1>
+        <h2>(saat:{{currentTime | date:'medium'}})</h2>
+        <br />
+        <input type="button" ng-click="setWeather('Sıcak')" value="Hava Sıcak olsun" class="btn btn-primary" />
+        <br /><br />
+        <input type="button" ng-click="setWeather('Soğuk')" value="Hava Soğuk olsun" class="btn btn-primary"  />
+        <br /><br />
+        <input type="button" ng-click="resetTime()" value="Her Yerde Saati Sıfırla" 
+                ng-class="{
+                'btn btn-warning':(currentTime | date:'s') % 2 === 0,
+                'btn btn-success':(currentTime | date:'s') % 2 === 1
+                }" 
+                
+                />
+    </div>
+    <br /><br />-->
+
+</body>
+</html>
