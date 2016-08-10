@@ -21,6 +21,8 @@ Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "9-ci-test-cd", "9-ci-test-c
 EndProject
 Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "8-socketio", "8-socketio\8-socketio.njsproj", "{60057767-1E1C-49C9-8FBA-DF52DBC79A96}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10-ng-app-module", "10-ng-app-module\10-ng-app-module.csproj", "{2FDC6355-45EF-485E-92F3-4083C93D91D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{60057767-1E1C-49C9-8FBA-DF52DBC79A96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60057767-1E1C-49C9-8FBA-DF52DBC79A96}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60057767-1E1C-49C9-8FBA-DF52DBC79A96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FDC6355-45EF-485E-92F3-4083C93D91D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FDC6355-45EF-485E-92F3-4083C93D91D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FDC6355-45EF-485E-92F3-4083C93D91D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FDC6355-45EF-485E-92F3-4083C93D91D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

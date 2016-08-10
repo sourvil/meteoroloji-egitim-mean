@@ -42,6 +42,7 @@
     <Content Include="style\bootstrap.min.css" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="style\" />
     <Folder Include="typings\" />
     <Folder Include="typings\globals\" />
     <Folder Include="typings\globals\express\" />
