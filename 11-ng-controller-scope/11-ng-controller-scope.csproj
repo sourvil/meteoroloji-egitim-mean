@@ -71,6 +71,8 @@
   <ItemGroup>
     <Content Include="app\content.js" />
     <Content Include="app\index.js" />
+    <Content Include="index2.html" />
+    <Content Include="app\multiple.js" />
     <Content Include="index.html" />
   </ItemGroup>
   <PropertyGroup>
