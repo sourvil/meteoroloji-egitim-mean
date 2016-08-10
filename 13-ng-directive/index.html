@@ -2,7 +2,7 @@
 <html ng-app="index">
 <head>
     <title>Meteoroloji Angular Eğitim Demo</title>
-	<meta charset="utf-8" />    
+    <meta charset="utf-8" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
     <!--<script src="https://code.angularjs.org/1.5.8/i18n/angular-locale_tr-tr.js"></script>-->
@@ -15,13 +15,24 @@
 
 </head>
 <body>
-    <meteor-datetime-element></meteor-datetime-element>
-    <div meteor-datetime-attribute></div>
-    <div class="meteorDatetimeClass"></div>
+    <div ng-controller="WeatherCtrl">
+        <label>
+            Direktifleri Göster/Gizle
+            <input type="checkbox" ng-model="checkDirectives" ng-init="checked=true" />
+        </label>
+        <br />
+        <br />
+        <div class="container" ng-if="checkDirectives">
+            <meteor-datetime-element></meteor-datetime-element>
+            <div meteor-datetime-attribute></div>
+            <div class="meteorDatetimeClass"></div>
 
-    <div ng-controller="SeasonCtrl">
-        <div ng-include="'header.html'"></div>
+            <div ng-controller="SeasonCtrl">
+                <div ng-include="'header.html'"></div>
+            </div>
+        </div>
     </div>
+
 
     <!--<div ng-controller="SeasonCtrl" class="container">
         <h1>Şu an mevsim  <b ng-bind="season"></b></h1>
@@ -51,7 +62,7 @@
     </div>
     <br /><br />-->
 
-    
+
 
 </body>
 </html>

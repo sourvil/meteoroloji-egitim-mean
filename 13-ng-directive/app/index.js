@@ -13,6 +13,7 @@
     console.log('SeasonController');
 
         this.season = 'Sonbahar';
+       
 
         $scope.setSeason = function (newSeason) {
             console.log('Mevsim artık: ' + newSeason);
@@ -22,6 +23,8 @@
 
 .controller('WeatherCtrl', ['$scope', '$rootScope', function ($scope, $rootScope) {
     console.log("WeatherCtrlController");
+
+    $scope.checkDirectives = true;
     $scope.weather = 'Ilık';
     $rootScope.indexNo = 0;
 
