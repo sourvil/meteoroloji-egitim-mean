@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html ng-app="index">
+<head>
+    <title>Meteoroloji Angular Eğitim Demo</title>
+	<meta charset="utf-8" />
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <!--<script src="https://code.angularjs.org/1.5.8/i18n/angular-locale_tr-tr.js"></script>-->
+    <script src="app/index.js" type="text/javascript"></script>
+    <script src="app/content.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css">
+
+
+</head>
+<body>
+    <div ng-controller="WeatherCtrl" class="container">
+        <br/><br/>
+        Arama: <input type="text" ng-model="searchCity"/>
+        <br/><br/>
+        Sıralama: 
+        <select ng-model="orderByFilter">        
+            <option value="name">Şehir</option>
+            <option value="temperature">Sıcaklık</option>
+            <option value="description">Hava Durumu</option>
+        </select>
+        <br/><br/>
+        Kaç kayıt?: <input type="text" ng-model="limit"/>
+        <br/><br/>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Şehir</th>
+                    <th>Sıcaklık</th>
+                    <th>Hava Durumu</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="info" ng-repeat="city in cities | filter:searchCity | orderBy:orderByFilter | limitTo : limit">
+                    <td>{{city.name}}</td>
+                    <td>{{city.temperature}}</td>
+                    <td>{{city.description}}</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <!--<br /><br />
+        <input type="button" ng-click="resetTime()" value="Her Yerde Saati Sıfırla" 
+                ng-class="{
+                'btn btn-warning':(currentTime | date:'s') % 2 === 0,
+                'btn btn-success':(currentTime | date:'s') % 2 === 1
+                }" 
+                
+                />-->
+    </div>
+</body>
+</html>

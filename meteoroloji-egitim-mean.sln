@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10-ng-app-module", "10-ng-a
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11-ng-controller-scope", "11-ng-controller-scope\11-ng-controller-scope.csproj", "{B1A70222-884C-440F-90AF-6A0C08FC53AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12-ng-expression-filter", "12-ng-expression-filter\12-ng-expression-filter.csproj", "{A91C322E-C5C1-4C9A-A396-1BC9617D7123}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{B1A70222-884C-440F-90AF-6A0C08FC53AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1A70222-884C-440F-90AF-6A0C08FC53AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1A70222-884C-440F-90AF-6A0C08FC53AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A91C322E-C5C1-4C9A-A396-1BC9617D7123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A91C322E-C5C1-4C9A-A396-1BC9617D7123}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A91C322E-C5C1-4C9A-A396-1BC9617D7123}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A91C322E-C5C1-4C9A-A396-1BC9617D7123}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
