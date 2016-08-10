@@ -1,0 +1,12 @@
+﻿<div ng-controller="SeasonCtrl" class="container">
+    <h1>Şu an mevsim  <b ng-bind="season"></b></h1>
+    <h2 ng-bind="indexNo"></h2>
+    <br />
+    <input type="text" ng-model="season">
+    <br><br>
+    <input type="button" ng-click="setSeason('Yaz')" value="Mevsim Yaz olsun" class="btn btn-primary" />
+    <br /><br />
+    <input type="button" ng-click="setSeason('Kış')" value="Mevsim Kış olsun" class="btn btn-primary" />
+    <br><br>
+    <h3><span ng-bind="::season" class="label label-danger"></span></h3>
+</div>

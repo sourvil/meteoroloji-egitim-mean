@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html ng-app="index">
+<head>
+    <title>Meteoroloji Angular Eğitim Demo</title>
+	<meta charset="utf-8" />    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
+    <!--<script src="https://code.angularjs.org/1.5.8/i18n/angular-locale_tr-tr.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-animate.min.js"></script>
+    <script src="app/index.js" type="text/javascript"></script>
+    <script src="app/content.js" type="text/javascript"></script>
+    <script src="app/ui.router.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+    <link rel="stylesheet" href="style/style.css" />
+
+
+</head>
+<body>
+
+     <!--ngRoute-->
+    <!--<a href="#/weather">Weather</a>
+    <br /><br />
+    <a href="#/season">Season</a>
+    <br /><br />
+    <div class="container sample-show-hide">
+        <ng-view></ng-view>
+    </div>-->
+
+    <!--ui-router-->
+    <a ui-sref="weather">Weather</a>
+    <br /><br />
+    <a ui-sref="season">Season</a>
+    <br /><br />
+    <div class="container sample-show-hide">
+        <ui-view></ui-view>
+    </div>
+    
+
+</body>
+</html>
