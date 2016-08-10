@@ -17,6 +17,7 @@
 </head>
 <body>
     <div ng-controller="WeatherCtrl" class="container">
+        Şu an : {{currentTime |  date : 'medium'}} , meteorFilter'a göre: {{currentTime | meteorDateFormat}}
         <br/><br/>
         Arama: <input type="text" ng-model="searchCity"/>
         <br/><br/>
@@ -47,14 +48,14 @@
         </table>
 
 
-        <!--<br /><br />
+        <br /><br />
         <input type="button" ng-click="resetTime()" value="Her Yerde Saati Sıfırla" 
                 ng-class="{
                 'btn btn-warning':(currentTime | date:'s') % 2 === 0,
                 'btn btn-success':(currentTime | date:'s') % 2 === 1
                 }" 
                 
-                />-->
+                />
     </div>
 </body>
 </html>
