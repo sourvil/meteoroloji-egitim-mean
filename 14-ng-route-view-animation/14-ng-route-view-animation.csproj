@@ -74,7 +74,7 @@
     <Content Include="app\ui.router.js" />
     <Content Include="index.html" />
     <Content Include="season.html" />
-    <Content Include="style\style.css" />
+    <Content Include="style\styleAnimation.css" />
     <Content Include="weather.html" />
   </ItemGroup>
   <PropertyGroup>
