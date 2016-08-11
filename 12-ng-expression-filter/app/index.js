@@ -24,6 +24,10 @@
     $scope.orderByFilter = "temperature";
     $scope.limit = 6;
 
+    $scope.resetTime = function () {
+        $scope.currentTime = Date.now();
+    };
+
     $scope.cities = [
         {
             "name": "Ankara",
