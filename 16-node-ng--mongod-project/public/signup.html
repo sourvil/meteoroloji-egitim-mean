@@ -1,0 +1,19 @@
+﻿<form name="signupForm" ng-submit="signup()" novalidate>
+    <div class="container">
+            <h2>Üyelik</h2>
+            <p class="text-warning">{{errorMessage}}</p>
+
+            <div class="form-group" ng-class="{ 'has-error' : signupForm.username.$invalid }">
+                <input type="text" name="username" ng-model="user.username" ng-minlength="2"  ng-required="true"  placeholder="Kullanıcı adı" class="form-control" />
+                <span class="label label-danger" ng-show="signupForm.username.$error.minlength">Kullanıcı adı en az 2 harften oluşmalıdır..</span>
+                <span class="label label-danger" ng-show="signupForm.username.$error.required">Kullanıcı adı zorunludur..</span>
+            </div>
+            <div class="form-group" ng-class="{ 'has-error' : signupForm.password.$invalid && signupForm.password.$dirty }">
+                <input type="password" name="password" ng-model="user.password" ng-required="true" placeholder="Şifre" class="form-control" />
+                <span class="label label-danger" ng-show="signupForm.password.$error.required">Şifre zorunludur..</span>
+            </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="Üye Ol" ng-disabled="signupForm.$invalid" />
+            </div>
+    </div>
+</form>

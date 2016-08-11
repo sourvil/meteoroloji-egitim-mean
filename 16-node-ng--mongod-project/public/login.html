@@ -1,0 +1,17 @@
+﻿<form name="loginForm" ng-submit="login()" novalidate>
+    <div class="container">
+        <h2>Giriş</h2>
+        <p class="text-warning">{{errorMessage}}</p>
+
+        <div class="form-group"  ng-class="{ 'has-error' : loginForm.username.$invalid }">
+            <input type="text" name="username" ng-model="user.username" placeholder="Kullanıcı adı" ng-minlength="2" class="form-control" />
+            <span class="label label-danger" ng-show="loginForm.username.$error.minlength">Kullanıcı adı en az 2 harften oluşmalıdır..</span>
+        </div>
+        <div class="form-group">
+            <input type="password" ng-model="user.password" placeholder="Şifre" class="form-control" />
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-primary" value="Giriş Yap"  ng-disabled="loginForm.$invalid"  />
+        </div>
+    </div>
+</form>

@@ -68,6 +68,19 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="home.html" />
+    <Content Include="images\mgm.jpg" />
+    <Content Include="javascripts\index.js" />
+    <Content Include="index.html" />
+    <Content Include="login.html" />
+    <Content Include="news.html" />
+    <Content Include="signup.html" />
+    <Content Include="station.html" />
+    <Content Include="stylesheets\style.css" />
+    <Content Include="weather.html" />
+  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
