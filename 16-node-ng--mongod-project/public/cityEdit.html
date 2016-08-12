@@ -1,0 +1,19 @@
+﻿<form name="cityForm" novalidate>
+    <div class="container">
+        <h2>Şehir Detayı</h2>
+        <p class="text-warning">{{errorMessage}}</p>
+
+        <div class="form-group" ng-class="{ 'has-error' : cityForm.name.$invalid }">
+            <input type="text" name="name" ng-model="city.name" placeholder="Şehir İsmi" ng-minlength="3" class="form-control" />
+            <span class="label label-danger" ng-show="cityForm.name.$error.minlength">Şehir ismi en az 3 harften oluşmalıdır..</span>
+        </div>
+        <div class="form-group">
+            <input type="text" ng-model="city.code" placeholder="Plaka" class="form-control" />
+        </div>
+        <div class="form-group">
+            <input type="submit" class="btn btn-primary" value="Şehri Kaydet" ng-click="citySave()" ng-disabled="cityForm.$invalid" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" class="btn btn-danger" value="Şehri Sil"  ng-click="cityDelete()" ng-show="cityId" />
+        </div>
+    </div>
+</form>

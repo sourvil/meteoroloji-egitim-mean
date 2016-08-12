@@ -1,0 +1,21 @@
+﻿<div class="container">
+    <br/>
+    <a href="#/citydetail" >Yeni Şehir Ekle</a>
+    <br /><br />
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>İsim</th>
+                <th>Plaka</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="info" ng-repeat="city in cities">
+                <td>
+                    <a href="#/citydetail/{{accessors.getId(city)}}">{{city.name}}</a>
+                </td>
+                <td>{{city.code}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

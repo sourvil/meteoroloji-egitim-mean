@@ -14,7 +14,7 @@ var passport = require('passport'); // newly
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-
+var city = require('./routes/city');// newly
 var weather = require('./routes/weather');// newly
 var auth = require('./routes/auth')(passport); // newly
 
@@ -28,6 +28,7 @@ MongoDB.on('error', function (err) { console.log(err.message); });
 MongoDB.once('open', function () {
     console.log("mongodb connection ok");
 });
+var MongoStore = require('connect-mongo')(session);
 
 var app = express();
 
@@ -38,7 +39,10 @@ app.set('view engine', 'jade');
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
-app.use(session({ secret: 'meteoroloji_secret' })); //newly
+app.use(session({
+    secret: 'meteoroloji_secret',
+    store: new MongoStore({ mongooseConnection: mongoose.connection })
+})); //newly
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
@@ -55,6 +59,7 @@ initPassport(passport);
 app.use('/', routes);
 app.use('/users', users);
 app.use('/auth', auth); // newly
+app.use('/city', city); // newly
 app.use('/weather', weather); // newly
 
 // catch 404 and forward to error handler

@@ -8,9 +8,9 @@ var router = express.Router();
 function isAuthenticated(req, res, next) {
 
     // GET ile veri çekebilir
-    //if (req.method === "GET") {
-    //    return next();
-    //}
+    if (req.method === "GET") {
+        return next();
+    }
 
     console.log('auth?' + req.isAuthenticated());
 

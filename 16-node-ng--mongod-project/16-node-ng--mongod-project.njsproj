@@ -32,6 +32,8 @@
   <ItemGroup>
     <Content Include="config.env" />
     <Content Include="package.json" />
+    <Content Include="public\city.html" />
+    <Content Include="public\cityEdit.html" />
     <Content Include="public\home.html" />
     <Content Include="public\images\mgm.jpg" />
     <Content Include="public\index.html" />
@@ -88,6 +90,7 @@
     <Compile Include="passport-init.js" />
     <Compile Include="public\javascripts\index.js" />
     <Compile Include="routes\auth.js" />
+    <Compile Include="routes\city.js" />
     <Compile Include="routes\index.js" />
     <Compile Include="routes\users.js" />
     <Compile Include="routes\weather.js" />
