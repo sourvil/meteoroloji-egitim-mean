@@ -1,0 +1,9 @@
+{
+  "name": "17-protractor-jasmine-test",
+  "version": "0.0.0",
+  "description": "17-protractor-jasmine-test",
+  "main": "server.js",
+  "author": {
+    "name": "Burak"
+  }
+}
