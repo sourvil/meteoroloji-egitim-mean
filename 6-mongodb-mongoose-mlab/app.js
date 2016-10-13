@@ -12,6 +12,7 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 var city = require('./routes/city');
 var weather = require('./routes/weather');
+var wind = require('./routes/wind');
 
 var mongoose = require('mongoose');
 const env = require('env2')('./config.env');
@@ -43,6 +44,7 @@ app.use('/', routes);
 app.use('/users', users);
 app.use('/city', city);
 app.use('/weather', weather);
+app.use('/wind', wind);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

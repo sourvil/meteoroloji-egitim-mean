@@ -12,8 +12,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>192cb57d-a69f-4b59-878d-cb3ccd3f3c4f</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>
-    </StartupFile>
+    <StartupFile>app.js</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -35,9 +34,11 @@
     <Content Include="package.json" />
     <Content Include="public\stylesheets\style.css" />
     <Content Include="README.md" />
+    <Content Include="views\city.jade" />
     <Content Include="views\error.jade" />
     <Content Include="views\index.jade" />
     <Content Include="views\layout.jade" />
+    <Content Include="views\wind.jade" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="models\" />
@@ -66,6 +67,7 @@
     <Compile Include="routes\index.js" />
     <Compile Include="routes\users.js" />
     <Compile Include="routes\weather.js" />
+    <Compile Include="routes\wind.js" />
   </ItemGroup>
   <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
